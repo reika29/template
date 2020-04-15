@@ -1,0 +1,30 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-babel": "^8.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-changed": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-combine-media-queries": "^0.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-webp": "^4.0.1",
+    "gulp-sass-glob": "^1.1.0",
+    "imagemin-svgo": "^7.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "imagemin-mozjpeg": "^8.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

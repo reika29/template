@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', sans-serif;
+  min-width: 1240px;
+  overflow-x: hidden;
+  background: #fff;
+  letter-spacing: .1em;
+  margin: auto;
+
+  @include small {
+    min-width: auto;
+    font-size: 12px;
+  }
+}
+
+#wrapper {
+  overflow-x: hidden;
+}
+
+.back-to-top {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid $black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #fff;
+  transition: all .8s;
+  z-index: 900;
+
+  @include small {
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  svg {
+    width: 10px;
+    height: 5px;
+    stroke: $black;
+    transition: all .4s;
+  }
+
+  &:hover {
+    background: rgba($keyColor, .5);
+    border-color: rgba($keyColor, .5);
+
+    @include small {
+      border: 2px solid $black;
+      background: #fff;
+    }
+
+    svg {
+      stroke: #fff;
+
+      @include small {
+        stroke: $black;
+      }
+    }
+  }
+}
+
+.pc_only {
+  @include small {
+    display: none;
+  }
+}
+
+.sp_only {
+  display: none;
+
+  @include small {
+    display: block;
+  }
+}
